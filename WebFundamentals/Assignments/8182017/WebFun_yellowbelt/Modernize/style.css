@@ -1,0 +1,228 @@
+/* CSS reset */
+* {
+	padding: 0px;
+	margin: 0px;
+	font-family: Verdana, sans-serif;
+}
+
+/* Background and width for main container */
+#container {
+	background-color: rgb(22, 22, 22);
+	width: 950px;
+	padding: 0px 10px;
+	margin: 0 auto;
+}
+
+/* Header sub-div */
+#header {
+	background-color: rgb(26, 26, 26);
+	padding: 25px 20px;
+	box-shadow: 0px 0px 3px 4px rgba(0,0,0,0.8);
+}
+
+/* Modernize Logo */
+#header img {
+	display: inline-block;
+}
+
+/* Phone number */
+#header p {
+	display: inline-block;
+	vertical-align: top;
+	color: rgb(204, 213, 212);
+	font-size: 14px;
+	font-weight: bold;
+	margin-top: 15px;
+	margin-left: 500px;
+}
+
+/* Navigation bar sub-div */
+#navigation {
+	background: linear-gradient(rgba(87, 87, 87, 1), rgba(28, 28, 28, 1));
+	padding-left: 20px;
+	box-shadow: 0px 0px 3px 4px rgba(0,0,0,0.8);
+}
+
+/* Home link in nav bar */
+#home_link {
+	display: inline-block;
+	color: rgb(220, 220, 220);
+	font-size: 12.5px;
+	font-weight: bold;
+	text-decoration: none;
+	padding: 15px 15px 15px 18px;
+}
+
+/* Other links in nav bar */
+.nav_link {
+	display: inline-block;
+	color: rgb(163, 163, 163);
+	font-size: 12.5px;
+	font-weight: bold;
+	text-decoration: none;
+	padding: 8px 15px 8px 15px;
+	border-left: 2px solid rgb(77, 77, 77);
+}
+
+/* Spacing at right side of nav bar for end border */
+#navigation p {
+	display: inline-block;
+	color: rgb(55, 55, 55);
+	font-size: 12.5px;
+	font-weight: bold;
+	padding: 15px;
+	margin-left: 230px;
+	border-left: 2px solid rgb(77, 77, 77);
+}
+
+/* Content holder */
+#content {
+	background-color: rgb(26, 26, 26);
+	box-shadow: 0px 0px 3px 4px rgba(0,0,0,0.8);
+}
+
+/* Main image */
+#main_pic {
+	width: 950px;
+	border-bottom: 4px solid rgb(59, 59, 59);
+}
+
+/* Features bar under image, sub-div of content */
+#feature {
+	vertical-align: top;
+	background-color: rgb(26, 26, 26);
+	padding: 15px 0px 30px 30px;
+}
+
+/* Feature logos in features bar */
+#feature img {
+	margin-right: 7.5px;
+}
+
+/* Feature information in bar, sub-div of feature */
+.feature_info {
+	display: inline-block;
+	vertical-align: top;
+	width: 165px;
+	margin-top: 15px;
+}
+
+/* Feature info headers */
+.feature_info h4 {
+	color: rgb(222, 112, 51);
+	font-family: Georgia, serif;
+	font-size: 18px;
+}
+
+/* Feature info content */
+.feature_info p {
+	font-family: Georgia, serif;
+	color: rgb(204, 213, 212);
+}
+
+/* Buy now bar, sub-div of content */
+#purchase {
+	background: repeating-linear-gradient(-45deg, black, rgb(0, 0, 0) 2px, rgb(20, 20, 20) 1px, rgb(10, 10, 10) 4px);
+	padding: 50px 40px;
+}
+
+/* Purchase text, sub-div of purchase */
+#purchase_text {
+	display: inline-block;
+	width: 650px;
+}
+
+/* Purchase section header */
+#purchase_text h2 {
+	color: rgb(236, 236, 236);
+	font-size: 23px;
+	font-weight: normal;
+	margin-bottom: 10px;
+}
+
+/* Purchase section content */
+#purchase_text p {
+	color: rgb(175, 175, 190);
+	font-size: 13px;
+}
+
+/* Buy now link */
+#purchase a {
+	display: inline-block;
+	vertical-align: top;
+	background: linear-gradient(rgba(240, 160, 100, 1), rgba(238, 130, 55, 1));
+	color: rgb(236, 236, 236);
+	text-decoration: none;
+	padding: 10px 30px;
+	margin-top: 15px;
+	margin-left: 80px;
+	border-radius: 6px;
+	border-top: 2px solid rgb(245, 189, 150);
+	border-left: 2px solid rgb(245, 140, 70);
+}
+
+/* Portfolio, sub-div of content */
+#portfolio {
+	background-color: rgb(26, 26, 26);
+	padding-top: 20px;
+	padding-left: 15px;
+}
+
+/* Portfolio header text */
+#portfolio h4 {
+	display: inline-block;
+	color: rgb(236, 236, 236);
+	font-family: Georgia, sans-serif;
+	margin-right: 730px;
+}
+
+/* View all projects link */
+#view_all {
+	display: inline-block;
+	color: rgb(222, 112, 51);
+	font-size: 11px;
+	font-style: italic;
+	text-decoration: none;
+}
+
+/* Projects, sub-div of portfolio */
+.project {
+	display: inline-block;
+	vertical-align: top;
+	width: 202px;
+	margin: 20px 25px 20px 0px;
+}
+
+/* Project images */
+.project img {
+	display: block;
+	width: 205px;
+	border: 4px solid rgb(51, 51, 51);
+}
+
+/* Project headers */
+.project h5 {
+	color: rgb(222, 112, 51);
+	font-size: 14.5px;
+	font-weight: none;
+	font-family: Georgia, sans-serif;
+	padding: 10px 0px;
+}
+
+/* Project text */
+.project p {
+	display: block;
+	color: rgb(236, 236, 236);
+	font-size: 11.5px;
+}
+
+/* Back to top link */
+#top {
+	display: block;
+	text-align: right;
+	color: rgb(107, 108, 106);
+	font-size: 10px;
+	text-decoration: none;
+	padding-bottom: 5px;
+	margin-right: 15px;
+}

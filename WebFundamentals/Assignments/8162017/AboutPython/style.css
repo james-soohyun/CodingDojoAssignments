@@ -1,0 +1,281 @@
+/* CSS reset */
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: Arial;
+  list-style-position: inside;
+}
+
+/* Container */
+#container {
+	background-color: rgb(0, 90, 135);
+	width: 970px;
+}
+
+/* Header */
+#header {
+	background-color: rgb(0, 90, 135);
+}
+
+/* Python logo */
+#header_logo {
+	display: inline-block;
+	height: 120px;
+	margin: 0px 20px;
+	padding-top: 10px;
+}
+
+/* Header search bar and text size */
+#header_search {
+	display: inline-block;
+	height: 130px;
+	width: 300px;
+	margin-left: 200px;
+	background-color: rgb(0, 90, 135);;
+	vertical-align: top;
+}
+
+/* Text size links in header */
+#text_size {
+	font-size: 14px;
+	padding: 10px 10px 10px 100px;
+}
+
+/* Links for text size in header */
+.text_link {
+	color: yellow;
+}
+
+/* Search bar background */
+#search_bar {
+	background-color: rgb(0, 90, 135);
+	height: 75px;
+}
+
+/* Search bar attributes */
+.searchForm {
+  width:200px;
+  height: 35px;
+  background-color: rgb(68, 68, 68);
+  padding:10px 40px;
+  box-shadow: 5px 5px 2px 0px rgba(0,0,0,.9);
+  border-radius: 10px;
+  -webkit-transition: height .5s ease;
+  -moz-transition: height .5s ease;
+  -ms-transition: height .5s ease;
+  -o-transition: height .5s ease;
+  transition: height .5s ease;
+}
+
+/* Open search box attributes */
+.searchTerm:focus {
+  width: 190px;
+  background-color: rgb(255, 255,255);
+  color: #000;
+  opacity:1;
+  box-shadow:1px 1px 9px rgba(0,0,0,0.85);
+  font-weight:800;
+}
+
+/* Search box attributes */
+.searchTerm{
+padding: 9px;
+background: white;
+color: solid rgb(193, 205, 216);
+border: 2px solid rgb(193, 205, 216);
+width: 150px;
+box-shadow: 1px 1px 5px rgba(0,0,0,0.65);
+outline: 0;
+text-align: center;
+}
+
+/* Search button attributes */
+.searchBtn {
+border: 0;
+width: 42px;
+cursor: pointer;
+position: absolute;
+margin: 5px 5px;
+border: 2px solid rgb(153, 153, 153);
+height: 28px;
+font-weight: 900;
+font-size: 12px;
+background-color: rgb(38, 81, 117);
+color: rgb(193, 205, 216);
+border-radius: 5px;
+}
+
+/* Navigation */
+#navigation {
+	background-color: rgb(0, 134, 179);
+	margin: 0px 50px 20px 90px;
+	border-radius: 10px;
+	text-align: center;
+	box-shadow: 7px 7px 2px 0px rgba(0,0,0,0.75);
+}
+
+/* Navigation menu attributes */
+.menu {
+	padding: 10px 15px;
+	background-color: rgb(0, 134, 179);
+	display: inline-block;
+	font-size: 22px;
+}
+
+/* Navigation menu text attributes */
+.nav_text {
+	text-decoration: none;
+	color: white;
+}
+
+/* Main content */
+#main_content {
+	background-color: rgb(0, 90, 135);
+	border-bottom: 3px solid rgb(0, 51, 77);
+}
+
+/* Unordered list of links in main content */
+#content_list {
+	display: inline-block;
+	height: 300px;
+	width: 200px;
+	background-color: rgb(0, 90, 135);
+	vertical-align: top;
+	margin-left: 100px;
+	text-align: center;
+}
+
+/* Styling for bullet points in main content list */
+#list1 {
+	padding-top: 10px;
+	color: white;
+}
+
+/* Spacing between list items */
+.main_li {
+	margin: 15px;
+}
+
+
+/* Coloring for list items */
+.link_list {
+	color: white;
+}
+
+/* Python description and ideology */
+#content_description {
+	display: inline-block;
+	height: 325px;
+	width: 605px;
+	background-color: rgb(0, 90, 135);
+	text-align: center;
+	padding-top: 5px;
+}
+
+/* Sub-content description attributes */
+#description {
+	color: white;
+	font-size: 14px;
+	padding-bottom: 7.5px;
+}
+
+/* Zen of Python quote */
+.motto {
+	color: gold;
+	font-size: 20px;
+	padding: 7.5px;
+	font-style: italic;
+}
+
+/* Zen of Python attributes */
+#python_zen {
+	color: white;
+	font-size: 18px;
+	padding-top: 10px;
+}
+
+
+/* Sub-content div holding Getting Started and Applications */
+#sub_content {
+	height: 200px;
+	background-color: white;
+	padding-left: 100px;
+}
+
+/* Python: Getting Started and Applications */
+.python_info {
+	display: inline-block;
+	height: 180px;
+	width: 380px;
+	background-color: white;
+	vertical-align: top;
+	text-align: center;
+	font-size: 13px;
+	border-top: 3px solid rgb(0, 136, 204);
+	margin-top: 10px;
+	padding-right: 30px;
+}
+
+/* Sub-content description attributes */
+.python_info p {
+	width: 300px;
+}
+
+/* Header for sub-content */
+.info_header {
+	padding: 10px;
+	width: 250px;
+	font-size: 15px;
+	text-align: center;
+}
+
+/* Emphasized words in Applications sub-content paragraph */
+#emphasize {
+	color: rgb(147, 187, 220);
+	font-size: 11px;
+}
+
+/* Bullet point alignment in sub-content */
+.python_info ul {
+	text-align: left;
+	color: black;
+	padding-left: 30px;
+}
+
+/* Color of text in sub-content unordered list */
+.info_list {
+	color: rgb(147, 187, 220);
+}
+
+/* Footnote navigation */
+#footnote {
+	height: 100px;
+	background: linear-gradient(rgba(39, 83, 119, 1), rgba(54, 116, 169, 1));
+	padding-left: 180px;
+}
+
+/* Spacing for footnote */
+#footnote1 {
+	padding-top: 50px;
+}
+
+/* Individual footnote nav links */
+.footnote_nav {
+	display: inline-block;
+	width: 200px;
+	text-align: center;
+}
+
+/* Link styling in footnote */
+#footnote .footnote_nav a {
+	text-decoration: none;
+	color: rgb(134, 183, 224);
+}
+
+/* Copyright text */
+#footnote #footnote2 p {
+	color: rgb(134, 183, 224);
+	font-size: 10px;
+	margin-top: 10px;
+	margin-left: 220px;
+}

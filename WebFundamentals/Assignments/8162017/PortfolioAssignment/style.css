@@ -1,0 +1,170 @@
+/* CSS reset */
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: Arial;
+}
+
+/* Name header */
+h1 {
+  display: inline-block;
+  font-family: "Comic Sans MS";
+  margin-right: 415px;
+  padding: 10px;
+}
+
+/* Header description */
+h3 {
+  display: inline-block;
+  font-size: 22px;
+  padding: 10px;
+}
+
+/* Project sub-div Headers */
+h4 {
+  background: linear-gradient(rgba(191, 191, 191, 1), rgba(128, 128, 128, 1), rgba(191, 191, 191, 1));
+  font-size: 20px;
+  padding: 10px;
+  color: white;
+}
+
+/* Technologies sub-div Headers */
+h5 {
+  background: linear-gradient(rgba(191, 191, 191, 1), rgba(128, 128, 128, 1), rgba(191, 191, 191, 1));
+  font-size: 18px;
+  padding: 10px;
+  color: white;
+}
+
+/* General <p> element styling */
+p {
+  padding: 10px;
+}
+
+/* Spacing for technology logos */
+table {
+  padding: 8px;
+}
+
+/* All links on page */
+a {
+  vertical-align: 75%;
+  color: black;
+  font-style: italic;
+}
+
+/* Container div */
+#container {
+  background: linear-gradient(-90deg, rgba(85, 65, 80, 1), rgba(130, 100, 123, 1), rgba(85,65,80,1));;
+  width: 1000px;
+}
+
+/* Header div */
+#header {
+  background-color: rgb(245, 245, 245);
+}
+
+/* Profile image */
+#profpic {
+  display: inline-block;
+  border: 5px solid silver;
+  height: 275px;
+  width: 418px;
+  vertical-align: top;
+  margin: 20px 20px 15px 20px;
+}
+
+/* Bio description div */
+#bio {
+  background: linear-gradient(to right, rgba(255,255,240,1), rgba(255,220,220,1));
+  display: inline-block;
+  height: 285px;
+  width: 505px;
+  margin: 20px 20px 15px 0px;
+}
+
+/* Spacing for specific link in bio */
+#bio_link {
+  padding: 10px;
+}
+
+/* Main content div */
+#main_content {
+  display: inline-block;
+  width: 960px;
+  padding: 0px 20px 20px 20px;
+}
+
+/* Project description sub-div */
+.content_description {
+  background: linear-gradient(to right, rgba(255,255,240,1), rgba(255,220,220,1));
+  display: inline-block;
+  width: 300px;
+  height: 410px;
+  vertical-align: top;
+  margin: 7.5px 7.5px 0px 7.5px;
+  font-size: 15.5px;
+}
+
+/* Project image */
+.site {
+  height: 165px;
+  width: 300px;
+}
+
+/* Technology content sub-div */
+.content_tech {
+  background: linear-gradient(to right, rgba(255,255,240,1), rgba(255,220,220,1));
+  display: inline-block;
+  height: 230px;
+  width: 300px;
+  margin: 0px 7.5px;
+}
+
+/* Technology logo sizes and spacing */
+.logo {
+  height: 45px;
+  width: 45px;
+  margin: 5px;
+}
+
+/* Project link sub-div buttons alignment */
+.button {
+  text-align: center;
+}
+
+/* Project link buttons */
+.site_link {
+  background-color: rgb(72, 137, 87);
+  display: inline-block;
+  padding: 5px;
+  border-radius: 10px;
+  color: white;
+  font-size: 13px;
+  border: 1px solid rgb(29, 70, 38);
+  text-decoration: none;
+  box-shadow: 9px 9px 15px -7px rgba(0,0,0,0.9);
+}
+
+/* Footnote */
+#footnote {
+  background-color: rgb(245, 245, 245);
+  font-size: 15px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+/* Profile links */
+#footnote2 {
+  display: inline-block;
+  font-size: 15px;
+  text-align: center;
+  vertical-align: top;
+}
+
+/* Profile logos */
+.contact {
+  height: 20px;
+  width: 20px;
+  padding: 5px;
+}

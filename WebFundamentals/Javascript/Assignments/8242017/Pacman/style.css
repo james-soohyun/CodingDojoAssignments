@@ -1,0 +1,37 @@
+
+#world {
+	height: 810px;
+	width: 1100px;
+	border: 1px dotted red;
+	margin: 0 auto;
+}
+
+.wall {
+	height: 30px;
+	width: 30px;
+	background: linear-gradient(blue,rgba(60,120,150,1));
+	display: inline-block;
+	margin: -3px;
+	border: 2px solid black;
+}
+
+.floor {
+	height: 30px;
+	width: 30px;
+	background-color: black;
+	display: inline-block;
+	margin: -3px;
+	border: 2px solid black;
+}
+
+.coin {
+	height:20px;
+	width:20px;
+	padding: 5px;
+}
+
+#cat {
+	height:25px;
+	width:25px;
+	padding-top:5px;
+}

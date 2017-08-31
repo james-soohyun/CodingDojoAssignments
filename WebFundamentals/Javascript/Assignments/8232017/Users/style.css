@@ -1,0 +1,30 @@
+* {
+	margin: 0px;
+	padding: 5px;
+}
+
+table {
+	border: 2px solid black;
+}
+
+tr {
+	border: 1px solid black;
+}
+
+th, td {
+	padding-right: 20px;
+}
+
+h1 {
+	border-bottom: 2px solid gray;
+	display: inline-block;
+	padding-top: 10px;
+}
+
+label {
+	display: block;
+}
+
+input {
+	display: block;
+}

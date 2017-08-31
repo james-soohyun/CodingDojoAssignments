@@ -1,0 +1,282 @@
+/* CSS for Internet file */
+
+* {
+	padding: 0px;
+	margin: 0px;
+	font-family: "Arial Narrow", Arial, sans-serif;
+}
+
+/* Span element- blue text highlights */
+.blue_text {
+	color: rgb(42, 105, 158);
+}
+
+/* Span element- red text highlights */
+#red_text {
+	color: red;
+}
+
+.aqua_text {
+	color: rgb(72, 179, 195);
+}
+
+.bold_text {
+	font-weight: bold;
+}
+
+/* Main container */
+#container {
+	background-color: white;
+	width: 850px;
+	margin: 0 auto;
+}
+
+/* Header */
+#header {
+	background-color: white;
+}
+
+/* Internet Logo */
+#header img {
+	position: absolute;
+	height: 80px;
+	width: 80px;
+}
+
+/* Header 1 */
+#header h1 {
+	background-color: white;
+	position: relative;
+	left: 80px;
+	display: inline-block;
+	padding-top: 20px;
+	font-size: 40px;
+	font-weight: normal;
+	color: rgb(74, 74, 74);
+}
+
+/* Header 2 */
+#header h2 {
+	background: linear-gradient(rgba(42, 105, 158, 1), rgba(84, 132, 170, 1), rgba(42, 105, 158, 1));
+	padding: 10px 20px;
+	font-size: 32px;
+	color: rgb(236, 241, 246);
+	font-weight: normal;
+}
+
+/* Content div */
+#content {
+	 background: linear-gradient(rgba(250, 250, 250, 1), rgba(255, 255, 255, 1));
+	 height: 700px;
+}
+
+/* Sub-div of content, left side */
+#left_bar {
+	background: linear-gradient(rgba(250, 250, 250, 1), rgba(255, 255, 255, 1));
+	display: inline-block;
+	vertical-align: top;
+	padding-top: 10px;
+	height: 700px;
+	width: 170px;
+}
+
+#left_question {
+	padding: 10px 0px;
+	margin-left: 4px;
+	font-size: 15px;
+}
+
+#left_answer {
+	padding-bottom: 20px;
+	margin-left: 4px;
+	font-size: 13px;
+}
+
+#left_bar a {
+	text-decoration: none;
+	display: block;
+	text-align: center;
+	padding: 5px 0px;
+	border-radius: 5px;
+	box-shadow: 2px 2px 2px 0px rgba(0,0,0,.5);
+	color: rgb(243, 247, 250);
+}
+
+#vid_link {
+	background: linear-gradient(rgba(94, 148, 190, 1), rgba(42, 105, 158, 1));
+	margin-bottom: 4px;
+}
+
+#resource_link {
+	background: linear-gradient(rgba(234, 162, 78, 1), rgba(237, 125, 18, 1));
+	margin-bottom: 20px;
+}
+
+#left_bar p {
+	display: block;
+	border-bottom: 2px solid gray;
+	margin-bottom: 20px;
+}
+
+/* Left bar advertisement */
+#ad {
+	background-color: yellow;
+	display: block;
+	height: 260px;
+	background-image: url("ad_background.png");
+	text-align: center;
+	color: rgb(233, 236, 238);
+}
+
+#ad h3 {
+	font-size: 23px;
+	padding-top: 15px;
+	font-weight: normal;
+}
+
+#ad img {
+	display: inline-block;
+	width: 70px;
+}
+
+#learn_link {
+	background: linear-gradient(rgba(103, 205, 221, 1), rgba(70, 201, 221, 1), rgba(103, 205, 221, 1));
+	color: rgb(234, 249, 251);
+	margin: 10px 5px;
+	display: inline-block;
+	font-size: 14px;
+}
+
+/* Sub-div of content, right side */
+#info {
+	display: inline-block;
+	margin-left: 50px;
+	height: 700px;
+	width: 590px;
+}
+
+/* Header sub-div of info */
+#info_head {
+	border-bottom: 1px solid silver;
+	padding-bottom: 15px;
+
+}
+
+/* Sub-div of info header, left side */
+#info_left {
+	display: inline-block;
+	margin-right: 370px;
+	vertical-align: top;
+	padding: 10px 0px;
+}
+
+/* Adjustment for home image in info header */
+#home_pic {
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+}
+
+/* DNS Link in info header */
+#info_left a {
+	color: rgb(81, 131, 173);
+	font-size: 13px;
+	text-decoration: none;
+}
+
+/* Phone image in info header */
+#phone_pic {
+	width: 36px;
+	padding-top: 7.5px;
+}
+
+/* Info header right side */
+#info_right {
+	display: inline-block;
+	height: 40px;
+	text-align: center;
+	vertical-align: top;
+	padding-top: 5px;
+}
+
+/* Text in info header right side */
+.contact_info {
+	display: block;
+	font-size: 9.5px;
+	color: gray;
+	font-style: italic;
+}
+
+/* Text styling for large phone number info header right side */
+#phone_number {
+	display: block;
+	font-size: 22px;
+	color: rgb(21, 195, 222);
+	font-weight: bold;
+}
+
+/* Website content */
+#info_body {
+	background-color: rgb(250,250,250);
+}
+
+/* Info body headers */
+#info_body h4 {
+	font-size: 18px;
+	color: rgb(47, 108, 160);
+	padding-top: 5px 0px;
+}
+
+/* Text in info body */
+#body_info p {
+	font-size: 15px;
+	padding-bottom: 0px: 
+}
+
+.content_list {
+	padding-left: 25px;
+	font-size: 15px;
+}
+
+.content_list li {
+	padding: 2px;
+}
+
+#body_info img {
+	height: 80px;
+	padding-left: 200px;
+}
+
+#the_big_3 {
+	margin-top: 25px;
+	padding: 10px;
+	border-style: solid;
+	border-color: rgb(0, 135, 221);
+	border-width: 2px 2px 0px 2px;
+	height: 100px;
+}
+
+#the_big_3 img {
+	display: inline-block;
+	height: 90px;
+	margin-right: 10px;
+}
+
+#big_3_text {
+	display: inline-block;
+	width: 450px;
+}
+
+#big_3_text h4 {
+	display: block;
+}
+
+#big_3_text p {
+	font-size: 15px;
+	display: block;
+	padding: 5px;
+}
+
+#big_3_text a {
+	text-decoration: none;
+}

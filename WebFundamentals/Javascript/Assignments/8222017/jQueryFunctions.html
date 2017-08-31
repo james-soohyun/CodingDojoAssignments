@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>JQuery Functions</title>
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+	</head>
+	<script type="text/javascript">
+		$(document).ready(function(){
+
+			$("#hide_p").click(function(){
+				$("#hide_show p").hide()
+			})
+
+			$("#show_p").click(function(){
+				$("#hide_show p").show()
+			})
+
+			$("#toggle button").click(function(){
+				$("#toggle p").toggle()
+			})
+
+			$("#slideUp").click(function(){
+				$("#slideDownUp p").slideUp()
+			})
+
+			$("#slideDown").click(function(){
+				$("#slideDownUp p").slideDown()
+			})
+
+			$("#slideToggle button").click(function(){
+				$("#slideToggle p").slideToggle()
+			})
+
+			$("#fadeIn").click(function(){
+				$("#fade p").fadeIn()
+			})
+
+			$("#fadeOut").click(function(){
+				$("#fade p").fadeOut()
+			})
+
+			$("#addClass button").click(function(){
+				$("#addClass p").addClass("makePink")
+			})
+
+			$("#before button").click(function(){
+				$("#before p").before("<a href='www.facebook.com'>Click Me for Facebook!</a>")
+			})
+
+			$("#after button").click(function(){
+				$("#after p").after("<a href='www.google.com'>Click Me for Google!</a>")
+			})
+
+			$("#append button").click(function(){
+				$("#append p").append(" My name is James.")
+			})
+
+			$("#html button").click(function(){
+				$("#html p").html("I have been changed forever....")
+			})
+
+			$("#attr button").click(function(){
+				var p_class = $("#attr p").attr("class");
+				$("#attr p").append( p_class )
+			})
+
+			$("#val button").click(function(){
+				var multipleValues = $("#multiple").val();
+				$("#val p").append(multipleValues.join( ", "));
+			})
+
+			$("#text button").click(function(){
+				$("#text p").text("Good job I guess...")
+			})
+		});
+
+	</script>
+	<body>
+
+		<div class="JQuery_functions" id="hide_show">
+			<h1>.Click Method .hide() and .show()</h1>
+			<button id="hide_p">Click Me To Make P Disappear!</button>
+			<button id="show_p">Click Me To Show P!</button>
+			<p>Click on the buttons above to make me disappear and reappear!</p>
+		</div>
+
+		<div class="JQuery_functions" id="toggle">
+			<h1>.Click Method .toggle()</h1>
+			<button>Click Me To Make P Disappear and Reappear!</button>
+			<p>Click on the button above to make me disappear and reappear!</p>
+		</div>
+
+		<div class="JQuery_functions" id="slideDownUp">
+			<h1>.Click Method .slideDown() and .slideUp()</h1>
+			<button id="slideUp">Click Me To Slide P Up!</button>
+			<button id="slideDown">Click Me To Slide P Down!</button>
+			<p>Click on the buttons above to make me disappear and reappear!</p>
+		</div>
+
+		<div class="JQuery_functions" id="slideToggle">
+			<h1>.Click Method .slideToggle()</h1>
+			<button>Click Me To Slide P Up and Down!</button>
+			<p>Click on the buttons above to make me disappear and reappear!</p>
+		</div>
+
+		<div class="JQuery_functions" id="fade">
+			<h1>.Click Method .fadeIn() and .fadeOut()</h1>
+			<button id="fadeIn">Click Me To Fade P In!</button>
+			<button id="fadeOut">Click Me To Fade P Out!</button>
+			<p>Click on the buttons above to make me disappear and reappear!</p>
+		</div>
+
+		<div class="JQuery_functions" id="addClass">
+			<h1>.Click Method .addClass()</h1>
+			<button>Click Me To Add Class!</button>
+			<p>Click on the button above to add a class to my element!</p>
+		</div>
+
+		<div class="JQuery_functions" id="before">
+			<h1>.Click Method .before()</h1>
+			<button>Click Me To Add A Link Before The Paragraph!</button>
+			<p>Click on the button to add a link before the paragraph!</p>
+		</div>
+
+		<div class="JQuery_functions" id="after">
+			<h1>.Click Method .after()</h1>
+			<button>Click Me To Add A Link After The Paragraph!</button>
+			<p>Click on the button to add a link after this paragraph!</p>
+		</div>
+
+		<div class="JQuery_functions" id="append">
+			<h1>.Click Method .append()</h1>
+			<button>Click Me To Append HTML Content Of The Paragraph!</button>
+			<p>Click on the button to add extra HTML content to the paragraph!</p>
+		</div>
+
+		<div class="JQuery_functions" id="html">
+			<h1>.Click Method .html()</h1>
+			<button>Click Me To Change The HTML Content Of The Paragraph!</button>
+			<p>Click on the button to change the HTML content of this paragraph!</p>
+		</div>
+
+		<div class="JQuery_functions" id="attr">
+			<h1>.Click Method .attr()</h1>
+			<button>Click Me To Return The Attributes Of The Paragraph!</button>
+			<p class="secret">Click on the button to return the value of this paragraph's attribute!</p>
+		</div>
+
+		<div class="JQuery_functions" id="val">
+			<h1>.Click Method .val()</h1>
+			<button>Click Me To Get The Class Attribute Of P!</button>
+			<select id="multiple" multiple="multiple">
+				<option selected="selected">Multiple1</option>
+				<option>Multiple2</option>
+				<option selected="selected">Multiple3</option>
+				<option selected="selected">Multiple4</option>
+			</select>
+			<p>Empty... </p>
+		</div>
+
+		<div class="JQuery_functions" id="text">
+			<h1>.Click Method .text()</h1>
+			<button>Click Me To Change The Text Of The Paragraph!</button>
+			<p>Click the button to change the paragraph of this text!</p>
+		</div>
+
+	</body>
+</html>
