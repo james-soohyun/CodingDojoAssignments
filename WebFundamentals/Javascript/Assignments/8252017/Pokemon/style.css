@@ -1,0 +1,8 @@
+#container {
+	margin: 0 auto;
+	border: 2px solid black;
+}
+
+#pokemon {
+	display: inline-block;
+}

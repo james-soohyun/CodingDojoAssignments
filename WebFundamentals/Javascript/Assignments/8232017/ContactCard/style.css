@@ -1,0 +1,19 @@
+* {
+	padding: 5px;
+	margin: 5px 0px;
+}
+
+#container {
+	width: 600px;
+}
+
+#form {
+	width: 275px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+#contacts {
+	display: inline-block;
+	vertical-align: top;
+}
