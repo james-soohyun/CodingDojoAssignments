@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>CatDog Display</title>
+	</head>
+	<body>
+		<div id="container">
+			<div id="catsAndDogs">
+				<h3>Cats</h3>
+				{%for cat in cats%}
+				<p>{{cat.name}}</p>
+				{%endfor%}
+
+				<h3>Dogs</h3>
+				{%for dog in dogs%}
+				<p>{{dog.name}}
+				{%endfor%}
+
+			</div>
+
+			<div id="return">
+				
+				<a href="/">Go back</a>
+
+			</div>
+
+		</div>
+	</body>
+</html>

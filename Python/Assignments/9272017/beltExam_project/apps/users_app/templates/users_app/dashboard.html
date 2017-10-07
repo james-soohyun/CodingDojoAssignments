@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		<h2>Hello, {{request.session.alias}}</h3>
+
+		<a href="/logout">Logout</a>
+
+		<h4>Here is the list of your friends:</h4>
+
+		<table>
+			<thead>
+				<th>Alias</th>
+				<th>Action</th>
+			</thead>
+
+		{%for user in users%}
+			<tr>
+				<td>{{user.alias}}</td>
+				<td>
+					<a href="/user/{{user.id}}">View Profile</a><br>
+					<a href="/removeFriend/{{user.id}}">Remove as Friend</a>
+				</td>
+			</tr>
+		{%endfor%}
+		</table>
+
+		<h4>Other Users not on your friends list:</h4>
+
+		<table>
+			<thead>
+				<th>Alias</th>
+				<th>Action</th>
+			</thead>
+
+		{%for user in users%}
+			<tr>
+				<td><a href="/user/{{user.id}}">{{user.alias}}</a></td>
+				<td><a href="/addFriend/{{user.id}}">Add as Friend</a></td>
+			</tr>
+		{%endfor%}
+		</table>
+
+		{%if messages%}
+
+			{%for message in messages%}
+
+				<p>{{message}}</p>
+
+			{%endfor%}
+
+		{%endif%}
+
+	</body>
+</html>

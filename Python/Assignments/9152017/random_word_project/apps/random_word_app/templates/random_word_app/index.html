@@ -1,0 +1,17 @@
+ <!DOCTYPE html>
+ <html lang="en">
+	 <head>
+	 	<title>Random Word Generator</title>
+	 </head>
+	 <body>
+	 	<div id="container">
+	 		<h4>Random Word attempt #{{attempt}} ({{random_word}})</h4>
+		 	<div id="form">
+			 	<form action="/random_word_app/generate" method="post">
+			 		{% csrf_token %}
+			 		<input id="submit" type="submit" value="Generate Random 14 Character String">
+			 	</form> 
+			 </div>
+		</div>
+	 </body>
+ </html>

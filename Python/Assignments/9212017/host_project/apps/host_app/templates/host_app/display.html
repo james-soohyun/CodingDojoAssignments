@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Web Hosting- Display</title>
+	</head>
+
+	<body>
+
+		<div id="container">
+
+			<h1>WEBSITES IN DATABASE</h1>
+
+			{%for site in sites%}
+			<p>{{site.site}}</p>
+			{%endfor%}
+
+		</div>
+
+	</body>
+
+</html>

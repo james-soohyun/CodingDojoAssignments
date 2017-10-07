@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Night Assignment</title>
+	</head>
+	<body>
+		<div id="container">
+
+			<form action="process" method="post">
+
+				{%csrf_token%}
+
+				<label>First Name:</label>
+				<input type="text" name="first" placeholder="First Name">
+
+				<label>Last Name:</label>
+				<input type="text" name="last" placeholder="Last Name">
+
+				<input type="submit" value="Add">
+
+			</form>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Ninja Gold</title>
+	</head>
+	<body>
+		<div id="container">
+			<h1>GOLD! YOU HAVE {{gold}} GOLD!</h1>
+			<form action="/process" method="post">
+				{% csrf_token %}
+				<input type="hidden" name="place" value="tavern">
+				<input type="submit" value="click me">
+			</form>
+			<form action="/process" method="post">
+				{% csrf_token %}
+				<input type="hidden" name="place" value="cave">
+				<input type="submit" value="click me">
+			</form>
+<!-- 			<form action="/process" method="post">
+				{% csrf_token %}
+				<input type="hidden" name="place" value="tavern">
+				<input type="submit" value="click me">
+			</form>
+			<form action="/process" method="post">
+				{% csrf_token %}
+				<input type="hidden" name="place" value="tavern">
+				<input type="submit" value="click me">
+			</form> -->
+			<h2>Messages:</h2>
+			{%for i in msg%}
+				<p>{{i}}</p>
+			{%endfor%}
+		</div>
+	</body>
+</html>

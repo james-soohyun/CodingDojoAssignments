@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Web Hosting</title>
+	</head>
+
+	<body>
+
+		<div id="container">
+
+			<h1>WEB HOSTING</h1>
+
+			<form action="/check" method="post">
+
+				{%csrf_token%}
+
+				<label>Check availability</label>
+				<input type="text" name="check" placeholder="Website name">
+
+				<input type="submit" value="Check availability">
+
+			</form>
+
+			<form action="/process" method="post">
+
+				{%csrf_token%}
+
+				<label>Add to Database</label>
+				<input type="text" name="site" placeholder="Website name">
+
+				<input type="submit" value="Add website">
+
+			</form>
+
+			{%if messages%}
+
+				{%for message in messages%}
+
+					{%if message.tags == "success" %}
+
+						<p style=color:green>{{message}}</p>
+
+					{%endif%}
+
+					{%if message.tags == "error" %}
+
+						<p style=color:red>{{message}}</p>
+
+					{%endif%}
+
+				{%endfor%}
+
+			{%endif%}
+
+		</div>
+
+	</body>
+
+</html>

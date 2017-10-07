@@ -1,0 +1,34 @@
+# Create your models here.
+
+
+# class User(models.Model):
+#name = models.Charfield(max_length = 255)
+# email = ""
+# created_at = models.DateTimeField(auto_now_add = True)
+
+
+#RELATIONSHIP ON MANY SIDE, USER IS THE ONE CLASS THAT IS RELATED TO MANY BOOKS
+# uploader = models.ForeignKey(User, related_name = "books")
+
+# #MANY TO MANY KEY IS THE LIKES; IN MANY TO MANY RELATIONSHIP, INTERPRETER READS TOP DOWN SO MANY TO MANY RELATIONSHIP KEY MUST BE IN THE SECOND CLASS
+# liked_users = models.ManyToManyField(User, related_name = "liked_books", null = True)
+
+#migrate after creating classes
+
+# from apps.app_name.models import *
+
+#in terminal: python manage.py shell
+# user1 = User.objects.create(first_name = "Jayd", last_name = "Schumacher", email="blah@blah.com")
+# user1.save()
+
+# User.objects.all()
+
+# ANY CHANGES TO CLASSES MUST BE MIGRATED
+
+# book1 = Book.objects.create(name = "Bible", desc = "Jesus", uploader = User.objects.get(id=1))
+# TYPING SPECIFIC ID ONLY WORKS BECAUSE WE KNOW WHICH ID IS ASSOCIATED WITH WHICH BOOK
+
+# book1.save()
+
+# book1.liked_books.add(user1)
+# book1.liked_books.all()

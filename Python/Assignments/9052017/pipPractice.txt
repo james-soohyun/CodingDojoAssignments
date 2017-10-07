@@ -1,0 +1,9 @@
+Needed to sudo install Django and pip to update 
+
+list showed pip frameworks and technologies
+
+pip freeze output installed packages in requirements format
+
+pip show Django shows qualities of installed version of Django
+
+pip search Flask shows descriptions of Flask

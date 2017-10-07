@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+	<head>
+
+		<title>Bard- User Login</title>
+
+		<meta charset="UTF-8">
+
+		<meta name="description" content="Bard: A website where users can share their stories and view other users' shared content and experiences.">
+
+		<link rel="stylesheet" type="text/css" href="styleTemplates/login.css">
+
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	 	<script type="text/javascript" src="styleTemplates/login.js"></script>
+
+	</head>
+
+
+		<h1>BARD- LOGIN PAGE</h1>
+
+		<form action="/loginVal" method="post">
+
+			{%csrf_token%}
+
+			<input type="text" name="email" placeholder="Enter your email"><br>
+
+			<input type="text" name="password" placeholder="Enter your password"><br>
+
+			<input type="submit" value="Login">
+
+		</form>
+
+		{%if messages%}
+
+			{%for message in messages%}
+
+				<p>{{message}}</p>
+
+			{%endfor%}
+
+		{%endif%}
+
+		<a href="/">Back To Homepage</a>
+
+	</body>
+</html>

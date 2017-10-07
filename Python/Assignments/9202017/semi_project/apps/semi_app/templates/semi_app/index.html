@@ -1,0 +1,36 @@
+<!-- THIS WILL DISPLAY ALL USERS -->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Semi-Restful Users</title>
+	</head>
+	<body>
+		<div id="container">
+			<h1>Users</h1>
+			<table>
+				<thead>
+					<th>ID</th>
+					<th>Full Name</th>
+					<th>Email</th>
+					<th>Created At</th>
+					<th>Actions</th>
+				</thead>
+				{%for user in users%}
+				<tr>
+					<td>{{user.id}}</td>
+					<td>{{user.full_name}}</td>
+					<td>{{user.email}}</td>
+					<td>{{user.created_at}}</td>
+					<td>
+						<a href="">Show </a>
+						<a href="">Edit </a>
+						<a href="/users/delete">Delete </a>
+					</td>
+				</tr>
+				{%endfor%}
+			</table>
+			<a href="/users/new">Add a new user</a>
+		</div>
+	</body>
+</html>

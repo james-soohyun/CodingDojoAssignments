@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+		<form action="/process" method="post">
+			{%csrf_token%}
+			<input type="text" name="first_name" placeholder="Enter that name, please">
+			<input type="submit" value="Submit that name">
+		</form>
+	</body>
+</html>

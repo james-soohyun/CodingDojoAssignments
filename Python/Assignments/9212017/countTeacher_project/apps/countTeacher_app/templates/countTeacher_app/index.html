@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Count Teachers</title>
+	</head>
+	<body>
+		<h3>Enter your favorite teacher's name!</h3>
+		<form action="/process" method="post">
+			{%csrf_token%}
+
+			<input type="text" name="name" placeholder="Teacher's name">
+
+			<input type="submit" value="Add">
+
+		</form>
+	</body>
+</html>

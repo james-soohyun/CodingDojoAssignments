@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+
+		<title>Comment Board</title>
+
+		<style>
+
+		* {
+			padding: 5px 10px;
+		}
+
+		</style>
+
+	</head>
+
+	<body>
+
+		<h1>Comment Board</h1>
+
+		<form action="/comment" method="post">
+
+			{%csrf_token%}
+
+			<input type="text" name="text" placeholder="Write a comment...">
+
+			<input type="submit" value="Add comment">
+
+		</form>
+
+		{%if messages%}
+
+			{%for message in messages%}
+
+				<p style="color:red">{{message}}</p>
+
+			{%endfor%}
+
+		{%endif%}
+
+		<br>
+
+		<table>
+
+			<thead>
+			
+				<th>Comment</th>
+				<th>Time</th>
+
+			</thead>
+
+			{%for comment in comments%}
+
+			<tr>
+
+				<td>{{comment.text}}</td>
+				<td>{{comment.created_at}}</td>
+
+			</tr>
+
+			{%endfor%}
+
+		</table>
+
+	</body>
+
+</html>

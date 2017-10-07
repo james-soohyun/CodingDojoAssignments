@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+	<head>
+
+		<title>Bard- New User Registration</title>
+
+		<meta charset="UTF-8">
+
+		<meta name="description" content="Bard: A website where users can share their stories and view other users' shared content and experiences.">
+
+		<link rel="stylesheet" type="text/css" href="styleTemplates/register.css">
+
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	 	<script type="text/javascript" src="styleTemplates/register.js"></script>
+
+	</head>
+
+	<body>
+
+		<div id="container">
+
+			<div id="header">
+
+				<h1>BARD- NEW USER REGISTRATION PAGE</h1>
+
+			</div>
+
+			<div id="body">
+
+				<form action="/create" method="post">
+
+					{%csrf_token%}
+
+					<label>First Name: </label>
+					<input type="text" name="first_name" placeholder="First Name">
+					<br>
+
+					<label>Last Name: </label>
+					<input type="text" name="last_name" placeholder="Last Name">
+					<br>
+
+					<label>Email: </label>
+					<input type="text" name="email" placeholder="Email">
+					<br>
+
+					<label>Password: </label>
+					<input type="text" name="password" placeholder="Password">
+					<br>
+
+					<label>Confirm Password: </label>
+					<input type="text" name="confirm_password" placeholder="Confirm password">
+					<br>
+
+					<input type="submit" value="Create user">
+
+				</form>
+
+				{%if messages%}
+
+					{%for message in messages%}
+
+						{%if message.tags == "error"%}
+
+							<p style='color:red'>{{message}}</p>
+
+						{%endif%}
+
+						{%if message.tags == "success"%}
+
+							<p style='color:green'>{{message}}</p>
+
+						{%endif%}
+
+					{%endfor%}
+
+				{%endif%}
+
+				<a href="/">Home</a>
+
+				<a href="/login">Login</a>
+
+			</div>
+
+		</div>
+
+	</body>
+
+</html>
+
+
+

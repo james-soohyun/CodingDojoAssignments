@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>What's Your Name?</title>
+	</head>
+	<body>
+		<div id="container">
+			<form action="/display" method="post">
+				{% csrf_token %}
+				<input type="text" name="firstName" placeholder="name">
+				<input type="submit" value="Submit!">
+			</form>
+			<h4>Your name is {{name}}?</h4>
+			<a href="/reset" method="post">Reset!</a>
+		</div>
+	</body>
+</html>

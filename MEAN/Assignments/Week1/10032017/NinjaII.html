@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+
+		<script>
+	        
+			function Ninja(name)
+			{
+				this.name = name;
+				this.health = 100;
+				var speed = 3;
+				var strength = 3;
+
+				this.showStats = function()
+				{
+					console.log("Name: " + this.name + ", Health: " + this.health + ", Speed: " + speed + ", Strength: " + strength);
+					return this
+				}
+			}
+
+			Ninja.prototype.sayName = function()
+			{
+				console.log("My ninja name is " + this.name);
+				return this;
+			}
+
+			Ninja.prototype.drinkSake = function()
+			{
+				this.health += 10;
+				return this;
+			}
+
+			Ninja.prototype.punch = function(targetNinja)
+			{
+				if (targetNinja instanceof Ninja)
+				{
+					targetNinja.health-=5;
+					console.log(targetNinja.name + " was punched by " + this.name + " and lost 5 Health!");
+					return this;
+				}
+				else 
+				{
+					console.log("Not a ninja!");
+					return this;
+				}
+			}
+
+			Ninja.prototype.kick = function(targetNinja)
+			{
+				if (targetNinja instanceof Ninja)
+				{
+					targetNinja.health-=15;
+					console.log(targetNinja.name + " was kicked by " + this.name + " and lost 15 Health!");
+					return this;
+				}
+				else 
+				{
+					console.log("Not a ninja!");
+					return this;
+				}
+			}
+
+			var blue_ninja = new Ninja("Goemon");
+			var red_ninja = new Ninja("Bill Gates");
+			red_ninja.punch(blue_ninja);
+			var green_ninja = "hello";
+			red_ninja.punch(green_ninja);
+			blue_ninja.showStats();
+			blue_ninja.kick(red_ninja);
+			red_ninja.showStats();
+
+		</script>
+
+	</head>
+
+	<body> 
+
+	</body>
+
+</html>

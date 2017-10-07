@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+
+		<title>Welcome!</title>
+
+	</head>
+
+	<body>
+
+		<div id="container">
+
+			<div id="header">
+
+				<h1>Welcome!</h1>
+
+			</div>
+
+			<div id="body">
+
+				<div id="register">
+
+					<h3>Register</h3>
+
+					<form action="/register" method="post">
+
+						{%csrf_token%}
+
+						<label>Name: </label>
+						<input type="text" name="name"><br>
+
+						<label>Alias: </label>
+						<input type="text" name="alias"><br>
+
+						<label>Email: </label>
+						<input type="text" name="email"><br>
+
+						<label>Password: </label>
+						<input type="text" name="password">
+						<p>*Password should be at least 8 characters</p>
+
+						<label>Confirm PW: </label>
+						<input type="text" name="confirm"><br>
+
+						<input type="submit" value="Register">
+
+					</form>
+
+				</div>
+
+				<div id="login">
+
+					<h3>Login</h3>
+
+					<form action="" method="post">
+
+						{%csrf_token%}
+
+						<label>Email: </label>
+						<input type="text" name="email"><br>
+
+						<label>Password: </label>
+						<input type="text" name="password"><br>
+
+						<input type="submit" value="Login">
+
+					</form>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</body>
+
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Belt Reviewer</title>
+	</head>
+	<body>
+
+		<h1>Register</h1>
+		<form action="register" method="post">
+
+			{%csrf_token%}
+
+			<label>Name: </label>
+			<input type="text" name="name"><br>
+
+			<label>Alias: </label>
+			<input type="text" name="alias"><br>
+
+			<label>Email: </label>
+			<input type="text" name="email"><br>
+
+			<label>Password: </label>
+			<input type="text" name="password"><br>
+			<label>*Password should be at least 8 characters</label><br>
+
+			<label>Confirm Password: </label>
+			<input type="text" name="confirm"><br>
+
+			<input type="submit" value="Register">
+
+		</form>	
+
+		<h1>Login</h1>
+		<form action="/login" method="post">
+
+			{%csrf_token%}
+
+			<label>Email: </label>
+			<input type="text" name="email"><br>
+
+			<label>Password: </label>
+			<input type="text" name="password"><br>
+
+			<input type="submit" value="Login">
+
+		</form>	
+
+		{%if messages%}
+
+			{%for message in messages%}
+
+					<p>{{message}}</p>
+
+			{%endfor%}
+
+		{%endif%}
+
+	</body>
+</html>

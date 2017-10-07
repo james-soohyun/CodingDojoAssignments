@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>GUEST BOOK</title>
+	</head>
+	<body>
+		
+		<div id="container">
+			{%for guest in guests%}
+
+			<p>{{guest.name}}</p>
+
+			{%endfor%}
+		</div>
+		
+	</body>
+</html>

@@ -75,7 +75,26 @@ function RemDupes(arr)
 
 }
 
+/* Function creates an object with Pokemon characteristics */
+function pokeCreator1(name, type, attack)
+{
+	var obj={};
+	obj.name=name;
+	obj.type=type;
+	obj.attack=attack;
+	return obj;
+}
 
+var snorlax = pokeCreator1("Snorlax", "normal", "rest")
+
+function pokeCreator2(name, type, attack)
+{
+	this.name=name;
+	this.type=type;
+	this.attack=attack;
+}
+
+var magikarp = name pokeCreator2("Magikarp", "water", "splash");
 
 
 

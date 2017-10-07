@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>GUEST BOOK</title>
+	</head>
+	<body>
+		<h1>Guest Book</h1>
+
+		{%if messages%}
+
+			{%for mes in messages%}
+
+				{{mes}}
+
+			{%endfor%}
+
+		{%endif%}
+
+		<form action="/process" method="post">
+			{%csrf_token%}
+			<input type="text" name="first_name" placeholder="Name">
+			<input type="submit" value="Add">
+		</form>
+	</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Display Teachers</title>
+	</head>
+	<body>
+		<h3>Total teachers named Ray: {{count}}<h3>
+
+
+		<h3>List of teachers:</h3>
+
+		{%for teacher in teachers%}
+		<p>{{teacher.name}}</p>
+		{%endfor%}
+
+		<a href="/">Go back</a>
+
+	</body>
+</html>
